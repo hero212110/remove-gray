@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "修正黑白效果",
+  "description": "修正B站首頁, 西瓜我的關注&影片頁面",
+  "version": "1.0.0",
+  "icons": {
+    "16": "china.png",
+    "48": "china.png",
+    "128": "china.png"
+  },
+  "permissions": ["activeTab"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.ixigua.com/*",
+        "https://www.bilibili.com/*"
+      ],
+      "js": ["execute.js"]
+    }
+  ]
+}
