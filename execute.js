@@ -35,6 +35,13 @@ function fixXigua() {
   document.head.appendChild(s);
 }
 
+function fixToutiao() {
+  let s = document.createElement("style");
+  s.type = "text/css";
+  s.innerText = `html {filter:grayscale(0%)} `;
+  document.head.appendChild(s);
+}
+
 window.onload = function () {
   if (location.origin == "https://www.bilibili.com") {
     fixBili();
@@ -43,5 +50,8 @@ window.onload = function () {
     setTimeout(() => {
       fixXigua();
     }, 3000);
+  }
+  if (location.origin == "https://www.toutiao.com") {
+    fixToutiao();
   }
 };
