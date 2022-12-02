@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "修正黑白效果",
-  "description": "修正黑白: B站 => 首頁, 西瓜 =>關注&影片頁面, 今日頭條 => 首頁",
+  "description": "B站, 西瓜, 今日頭條 (https://github.com/hero212110/remove-gray)",
   "version": "1.0.0",
   "icons": {
     "16": "china.png",
